@@ -3736,7 +3736,8 @@ table.alt tbody tr td {
 
 @media screen and (max-width: 1280px) {
     #header {
-        background-image: url("images/overlay.png"), url("images/pattern-size2.svg");
+       background-image: linear-gradient(283deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 30%, rgba(130, 130, 130, 0.04) 30%, rgba(130, 130, 130, 0.04) 49%, rgba(31, 31, 31, 0.08) 49%, rgba(31, 31, 31, 0.08) 100%), linear-gradient(297deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 20%, rgba(130, 130, 130, 0.04) 20%, rgba(130, 130, 130, 0.04) 60%, rgba(31, 31, 31, 0.08) 60%, rgba(31, 31, 31, 0.08) 100%), linear-gradient(242deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 29%, rgba(130, 130, 130, 0.04) 29%, rgba(130, 130, 130, 0.04) 48%, rgba(31, 31, 31, 0.08) 48%, rgba(31, 31, 31, 0.08) 100%), linear-gradient(90deg, rgb(5, 118, 217), rgb(5, 118, 217));
+
     }
 }
 
@@ -3777,7 +3778,8 @@ table.alt tbody tr td {
 
 @media screen and (max-width: 736px) {
     #header {
-        background-image: url("images/overlay.png"), url("images/pattern-size3.svg");
+        background-image:     background-image: linear-gradient(283deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 30%, rgba(130, 130, 130, 0.04) 30%, rgba(130, 130, 130, 0.04) 49%, rgba(31, 31, 31, 0.08) 49%, rgba(31, 31, 31, 0.08) 100%), linear-gradient(297deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 20%, rgba(130, 130, 130, 0.04) 20%, rgba(130, 130, 130, 0.04) 60%, rgba(31, 31, 31, 0.08) 60%, rgba(31, 31, 31, 0.08) 100%), linear-gradient(242deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 29%, rgba(130, 130, 130, 0.04) 29%, rgba(130, 130, 130, 0.04) 48%, rgba(31, 31, 31, 0.08) 48%, rgba(31, 31, 31, 0.08) 100%), linear-gradient(90deg, rgb(5, 118, 217), rgb(5, 118, 217));
+
     }
     #header h1 {
         font-size: 2em;
