@@ -1,0 +1,169 @@
+:root {
+  --gradient2: linear-gradient(
+    34deg,
+    rgba(46, 90, 232, 1) 0%,
+    rgba(242, 80, 65, 1) 100%
+  );
+  --myWhite: rgb(255, 247, 247);
+  --myBlack: rgb(0, 0, 0);
+  --base_margin: 10%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+body {
+  background-color: var(--myWhite);
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: var(--myBlack);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.white {
+  color: var(--myWhite);
+}
+
+.wrapper {
+  padding-top: 2%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--myBlack);
+  font-size: 4rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+}
+
+.gradient-font {
+  background: var(--gradient2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding-right: 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  font-weight: bold;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: var(--myWhite);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 45px;
+  font-size: 40px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  font-size: 1rem;
+}
+
+.footer-statement {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+}
+.footer-social-single {
+  padding: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+}
+.footer-item {
+  padding: 10px;
+  font-size: x-small;
+  text-decoration: none;
+}
+
+#fullscreen-main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-centerd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

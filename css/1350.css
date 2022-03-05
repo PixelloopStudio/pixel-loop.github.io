@@ -1,0 +1,36 @@
+@media only screen and (max-width: 1350px) {
+  body {
+    font-size: 01.2rem;
+  }
+
+  .wrapper {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    column-gap: none;
+  }
+  .text {
+    grid-row: 1;
+    grid-column: unset;
+  }
+  .animation {
+    grid-row: 2;
+    grid-column: unset;
+  }
+
+  #my-picture {
+    grid-row: 1;
+    margin-bottom: 5%;
+  }
+
+  .myVideo {
+    width: 100%;
+    /* height: 100%; */
+  }
+  .extra-bottom-space {
+    padding-bottom: 20%;
+  }
+}

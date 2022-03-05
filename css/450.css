@@ -1,0 +1,23 @@
+@media only screen and (max-width: 450px) {
+  .wrapper {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .extra-bottom-space {
+    padding-bottom: 80%;
+  }
+
+  /* Mobile Menu anpassung */
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
