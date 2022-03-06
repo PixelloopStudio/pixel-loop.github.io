@@ -40,6 +40,17 @@
   .extra-bottom-space {
     padding-bottom: 20%;
   }
+
+  main {
+    row-gap: 50px;
+    grid-template-areas:
+      "web-text"
+      "web-animation"
+      "app-text "
+      "app-animation"
+      "other-text "
+      "other-animation";
+  }
 }
 
 @media only screen and (max-width: 900px) {

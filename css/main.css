@@ -95,7 +95,7 @@ section {
   right: 100%;
   top: 0;
   z-index: -1;
-  -webkit-transition: right 0.2s ease-in;
+  transition: right 0.2s ease-in;
 }
 
 .fancy-button:hover:before {
@@ -223,4 +223,40 @@ textarea {
 
 .coming-soon-box h1 {
   color: white;
+}
+
+main {
+  display: grid;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  row-gap: 200px;
+  column-gap: 100px;
+  grid-template-areas:
+    "web-text web-animation"
+    "app-animation app-text "
+    "other-text other-animation";
+}
+
+#web-animation {
+  grid-area: web-animation;
+}
+
+#web-text {
+  grid-area: web-text;
+}
+
+#app-text {
+  grid-area: app-text;
+}
+
+#app-animation {
+  grid-area: app-animation;
+}
+
+#other-animation {
+  grid-area: other-animation;
+}
+
+#other-text {
+  grid-area: other-text;
 }
