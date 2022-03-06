@@ -1,296 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/1600.css">
-    <link rel="stylesheet" href="./css/1350.css">
-    <link rel="stylesheet" href="./css/900.css">
-    <link rel="stylesheet" href="./css/600.css">
-    <link rel="stylesheet" href="./css/450.css">
-    <link rel="stylesheet" href="./css/animation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9dff98e40a.js" crossorigin="anonymous"></script>
-    <title>Document</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/media/Pixelloop_Icon.png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
 
-<body>
-    
-<button onclick="topFunction()" id="backToTop" title="Go to top">TOP</button>
-<div class="mobile-menu" scroll="no">
+    <link rel="stylesheet" href="./css/main.css" />
 
-</div>
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/breakpoints.css" />
 
-<div class="wrapper">
-    <div class="topnav" id="myTopnav">
+    <link
+      rel="preload"
+      href="/font/RobotoSlab-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/9dff98e40a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Pixelloop Studio</title>
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="backToTop" title="Go to top">
+      TOP
+    </button>
+    <div class="mobile-menu" scroll="no"></div>
+
+    <div class="wrapper">
+      <div class="topnav" id="myTopnav">
         <div id="nav-logo">
-            <a href="./index.html"><img src="./media/Pixelloop_Icon.png" alt="" height="50px"></a>
+          <a href="./index.html"
+            ><img src="./media/Pixelloop_Icon.png" alt="" height="50px"
+          /></a>
         </div>
         <div id="nav-links">
-            <a href="#home">Webdevelopment</a>
-            <a href="#news">Appdevelopment</a>
-            <a href="#news">Andere Services</a>
+          <a href="#home">Webdevelopment</a>
+          <a href="#news">Appdevelopment</a>
+          <a href="#news">Andere Services</a>
 
-            <a href="#contact">Über uns</a>
-            <a href="javascript:void(0);" class="icon" onclick="openNav()">
-              <i class="fa fa-bars"></i>
-            </a>
-       
+          <a href="./html/about.html">Über uns</a>
+          <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
       </div>
     </div>
 
-
-
     <!-- The overlay -->
     <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
 
-        <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    
-        <!-- Overlay content -->
-        <div class="overlay-content">
+      <!-- Overlay content -->
+      <div class="overlay-content">
         <a href="#" class="gradient-font">About</a>
         <a href="#" class="gradient-font">Services</a>
         <a href="#" class="gradient-font">Clients</a>
         <a href="#" class="gradient-font">Contact</a>
-        </div>
-  
+      </div>
     </div>
 
     <section id="header">
-        <div class="wrapper">
-            <div class="grid">
-                <div class="text-container">
-
-                <div class="text">
-                    <h1 class="gradient-font">Pixelloop Studio</h1>
-                    <h2 id="slogan" >MAKE IT PIXEL PERFECT</h2>
-                    <p>
-                        Willkommen bei Pixelloop Studio. Wir sind ein junges dynamisches Unternehmen aus der IT und Medien Branche. Unser Kernbereich besteht aus individuelle Dienstleistungen für App- und Webapplikationen. Zusätzlich bieten wir auch Dienstleistungen im Bereich
-                        Design, Konzeption und Workflowoptimierung an.
-                    </p>
-                    <button class="fancy-button">Erfahre Mehr</button>
-                </div>
+      <div class="wrapper">
+        <div class="grid">
+          <div class="text-container">
+            <div class="text">
+              <h1 class="gradient-font">Pixel<wbr />loop Studio</h1>
+              <h2 id="slogan">MAKE IT PIXEL PERFECT</h2>
+              <p>
+                Willkommen bei Pixelloop Studio. Wir sind ein junges dynamisches
+                Unternehmen aus der IT und Medien Branche. Unser Kernbereich
+                besteht aus individuelle Dienstleistungen für App- und
+                Webapplikationen. Zusätzlich bieten wir auch Dienstleistungen im
+                Bereich Design, Konzeption und Workflowoptimierung an.
+              </p>
+              <button class="fancy-button">Erfahre Mehr</button>
             </div>
+          </div>
 
-                <div class="animation" >
-                    <img class="bild" src="./media/start.png" alt="" >
-                    <!-- <video autoplay muted loop class="myVideo">
+          <div class="animation">
+            <img class="bild" src="./media/start.png" alt="" />
+            <!-- <video autoplay muted loop class="myVideo">
                         <source src="./media/start.webm" type="video/webm">
                 </video> -->
-
-                </div>
-            </div>
+          </div>
         </div>
-
+      </div>
     </section>
 
     <section id="core" class="animated-bg">
-   
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
-        
-        <div class="wrapper">
-            <h2 class="white">Unsere Vorteile</h2>
-            <div class="coregrid ">
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
 
-                <div class="usp" data-tilt data-tilt-perspective="3000" data-tilt-speed="4000">
-                    <h3 class="white">100% Anpassbar und indivudell</h3>
-                    <p class=" white">
-                        Bei Pixelloop Studio bekommen sie genau das was sie brauchen. (Jeder Pixel wird nach ihrem Wunsch gestaltet). Sie erhalten ein kostenloses und maßgeschneidertes Angebot, welches exakt auf ihre Bedürfnisse angepasst ist.
-                    </p>
-                </div>
-                <div class="usp"  data-tilt data-tilt-perspective="3000" data-tilt-speed="4000">
-                    <h3 class="white"> Kommunikation wird GROß geschrieben</h3>
-                    <p class="white">
-                        Um sicherzustellen, dass sie als Kunde mit ihrem Endprodukt zufrieden sind, legen wir viel Wert auf Kommunikation während des Entwicklungsprozesses. Sie erhalten von uns in regelmäßigen Abständen Zwischenstände ihres Projekts und können uns gewünschte
-                        Änderungen direkt mitteilen.
-
-                    </p>
-                </div>
-                <div class="usp"  data-tilt data-tilt-perspective="3000" data-tilt-speed="4000">
-                    <h3 class="white">Einzigartig und Aufsehenerregend</h3>
-                    <p class="white">
-                        Pixelloop Studio distanziert sich ganz bewusst von fertigen Templates und Einschränkungen durch vorgefertige Baukästen. Mit Pixelloop Studio erhalten sie ihr ganz eigenes und einzigartiges Produkt.
-                    </p>
-                </div>
-                <div class="usp"  data-tilt data-tilt-perspective="3000" data-tilt-speed="4000">
-                    <h3 class="white">Junges Unternehmen mit neuster Technologie</h3>
-                    <p class="white">
-                        Pixelloop Studio distanziert sich ganz bewusst von fertigen Templates und Einschränkungen durch vorgefertige Baukästen. Mit Pixelloop Studio erhalten sie ihr ganz eigenes und einzigartiges Produkt.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-
-    </div>
+      <div class="wrapper">
+        <h2 class="white">Unsere Vorteile</h2>
+        <div class="coregrid">
+          <div
+            class="usp"
+            data-tilt
+            data-tilt-perspective="3000"
+            data-tilt-speed="4000"
+          >
+            <h3 class="white">100% Anpassbar und indivudell</h3>
+            <p class="white">
+              Bei Pixelloop Studio bekommen sie genau das was sie brauchen.
+              (Jeder Pixel wird nach ihrem Wunsch gestaltet). Sie erhalten ein
+              kostenloses und maßgeschneidertes Angebot, welches exakt auf ihre
+              Bedürfnisse angepasst ist.
+            </p>
+          </div>
+          <div
+            class="usp"
+            data-tilt
+            data-tilt-perspective="3000"
+            data-tilt-speed="4000"
+          >
+            <h3 class="white">Kommunikation wird GROß geschrieben</h3>
+            <p class="white">
+              Um sicherzustellen, dass sie als Kunde mit ihrem Endprodukt
+              zufrieden sind, legen wir viel Wert auf Kommunikation während des
+              Entwicklungsprozesses. Sie erhalten von uns in regelmäßigen
+              Abständen Zwischenstände ihres Projekts und können uns gewünschte
+              Änderungen direkt mitteilen.
+            </p>
+          </div>
+          <div
+            class="usp"
+            data-tilt
+            data-tilt-perspective="3000"
+            data-tilt-speed="4000"
+          >
+            <h3 class="white">Einzigartig und Aufsehenerregend</h3>
+            <p class="white">
+              Pixelloop Studio distanziert sich ganz bewusst von fertigen
+              Templates und Einschränkungen durch vorgefertige Baukästen. Mit
+              Pixelloop Studio erhalten sie ihr ganz eigenes und einzigartiges
+              Produkt.
+            </p>
+          </div>
+          <div
+            class="usp"
+            data-tilt
+            data-tilt-perspective="3000"
+            data-tilt-speed="4000"
+          >
+            <h3 class="white">Junges Unternehmen mit neuster Technologie</h3>
+            <p class="white">
+              Pixelloop Studio distanziert sich ganz bewusst von fertigen
+              Templates und Einschränkungen durch vorgefertige Baukästen. Mit
+              Pixelloop Studio erhalten sie ihr ganz eigenes und einzigartiges
+              Produkt.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-    <div class="big_bg">
+    <!-- <div class="big_bg"> -->
     <section id="web">
-        <div class="wrapper">
-            <div class="grid">
-                <div class="animation animation-switch">
-                    <video autoplay muted loop class="myVideo">
-                    <source src="./media/webdev_low.webm" type="video/webm">
-
-                 </video>
-                </div>
-                <div class="text-conatiner">
-
-                <div class="text">
-                    <h2 class="gradient-font">Webdevelopment</h2>
-                    <p class="info">
-
-                        Einer unser Kernbereich ist das Web. Hier bieten wir individuelle und maßgeschneiderte Lösungen für deine Webapplikation und Onlinepräsenz an. Heute ist es wichtiger denn je, mit einer starken und einzigartigen Webpräsenz auf sich aufmerksam zu machen.
-                        Daher bieten wir individuelle und maßgeschneiderte Lösungen für dein Projekt. Wir unterstützen dich von der Idee bis zur Fertigstellung deines Projekts.
-
-                    </p>
-                    <button class="fancy-button"><a href="html/coming-soon.html"> zu Webdevelopment</a></button>
-                </div>
-                </div>
+      <div class="wrapper">
+        <div class="grid">
+          <div class="animation">
+            <video autoplay muted loop class="myVideo">
+              <source src="./media/webdev_low.webm" type="video/webm" />
+            </video>
+          </div>
+          <div class="text-conatiner">
+            <div class="text">
+              <h2 class="gradient-font">Webdevelopment</h2>
+              <p class="info">
+                Einer unser Kernbereich ist das Web. Hier bieten wir
+                individuelle und maßgeschneiderte Lösungen für deine
+                Webapplikation und Onlinepräsenz an. Heute ist es wichtiger denn
+                je, mit einer starken und einzigartigen Webpräsenz auf sich
+                aufmerksam zu machen. Daher bieten wir individuelle und
+                maßgeschneiderte Lösungen für dein Projekt. Wir unterstützen
+                dich von der Idee bis zur Fertigstellung deines Projekts.
+              </p>
+              <button class="fancy-button">
+                <a href="html/coming-soon.html"> zu Webdevelopment</a>
+              </button>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="app">
-        <div class="wrapper">
-            <div class="grid">
-                <div class="text-container">
-
-                    <div class="text">
-                        <h2 class="gradient-font">APPDEVELOPMENT</h2>
-                        <p class="info ">
-                            Du möchtest deine Inhalte in einer App für Android und IOS bereitstellen? Wir bieten individuelle Lösungen für Unternehmen und Content Creator, um ihre Präsenz auf eine neue Ebene zu bringen. Wir helfen dir bei jedem Schritt und beraten dich gerne, um
-                            eine pixel perfekte Lösung für dein Projekt zu finden.
-                        </p>
-                        <button class="fancy-button"><a href="html/coming-soon.html">Mehr zu Appdevelopment</a></button>
-                    </div>
-                </div>
-
-
-                <div class="animation">
-                    <video autoplay muted loop class="myVideo">
-                    <source src="./media/app-video.webm" type="video/webm">
-
-            </video>
-                </div>
+      <div class="wrapper">
+        <div class="grid">
+          <div class="text-container">
+            <div class="text">
+              <h2 class="gradient-font">APPDEVELOPMENT</h2>
+              <p class="info">
+                Du möchtest deine Inhalte in einer App für Android und IOS
+                bereitstellen? Wir bieten individuelle Lösungen für Unternehmen
+                und Content Creator, um ihre Präsenz auf eine neue Ebene zu
+                bringen. Wir helfen dir bei jedem Schritt und beraten dich
+                gerne, um eine pixel perfekte Lösung für dein Projekt zu finden.
+              </p>
+              <button class="fancy-button">
+                <a href="html/coming-soon.html">Mehr zu Appdevelopment</a>
+              </button>
             </div>
+          </div>
+
+          <div class="animation">
+            <video autoplay muted loop class="myVideo">
+              <source src="./media/app-video.webm" type="video/webm" />
+            </video>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="other">
-        <div class="wrapper">
-            <div class="grid">
-                <div class="animation animation-switch">
-                    <video autoplay muted loop class="myVideo">
-                        <source src="./media/other_big.webm" type="video/webm">
-                    </video>
-                </div>
-                <div class="text-container">
-                    <div class="text">
-                        <h2 class="gradient-font">ANDERE SERVICES</h2>
-                        <p class="info">Neben unseren beiden Kernbereichen bieten wir auch viele weiten Dienstleistungen im Bereich Design, Konzeptionierung und Workflowoptimierung an. Du benötigst 3D Produktbilder für deinen Onlineshop, eine neue corporate identity oder
-                            maßgeschneiderte Plugins für deine Software? Hier bist du an der richtigen Stelle. Wir bieten individuelle Lösungen für dein Projekt und machen es “Pixel Perfekt”.</p>
-                        <button class="fancy-button"><a href="html/coming-soon.html">Mehr zu anderen Services</a></button>
-                    </div>
-                </div>
+      <div class="wrapper">
+        <div class="grid">
+          <div class="animation animation-switch">
+            <video autoplay muted loop class="myVideo">
+              <source src="./media/other_big.webm" type="video/webm" />
+            </video>
+          </div>
+          <div class="text-container">
+            <div class="text">
+              <h2 class="gradient-font">ANDERE SERVICES</h2>
+              <p class="info">
+                Neben unseren beiden Kernbereichen bieten wir auch viele weiten
+                Dienstleistungen im Bereich Design, Konzeptionierung und
+                Workflowoptimierung an. Du benötigst 3D Produktbilder für deinen
+                Onlineshop, eine neue corporate identity oder maßgeschneiderte
+                Plugins für deine Software? Hier bist du an der richtigen
+                Stelle. Wir bieten individuelle Lösungen für dein Projekt und
+                machen es “Pixel Perfekt”.
+              </p>
+              <button class="fancy-button">
+                <a href="html/coming-soon.html">Mehr zu anderen Services</a>
+              </button>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-
-    </div>
+    <!-- </div> -->
 
     <section id="form" class="animated-bg">
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
-        <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
 
-        <div class="wrapper">
-            <div class="grid">
-                <div class="white contact-form" >
-                    <h2>Kontaktieren sie uns</h2>
-                    <form>
-                        <input type="text" id="name" name="name" placeholder="Name"><br>
-                        <input type="email" id="email" name="email" placeholder="Email"><br>
-                        <textarea name="message" id="message" cols="20" rows="10" placeholder="Nachricht"></textarea><br>
-                        <button type="submit" class="submit-btn">Senden</button>
-                    </form>
-                </div>
-            
-                <div class="animation" id="my-picture">
-                    <img class="bild"src="./media/me.png" alt="">
-                </div>
-            </div>
+      <div class="wrapper">
+        <div class="grid">
+          <div class="white contact-form">
+            <h2>Kontaktieren sie uns</h2>
+            <form>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+              /><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+              /><br />
+              <textarea
+                name="message"
+                id="message"
+                cols="20"
+                rows="10"
+                placeholder="Nachricht"
+              ></textarea
+              ><br />
+              <button type="submit" class="submit-btn">Senden</button>
+            </form>
+          </div>
+
+          <div class="animation" id="my-picture">
+            <img class="bild" src="./media/me.png" alt="" />
+          </div>
         </div>
-
+      </div>
     </section>
 
     <div class="wrapper">
-    
-    <footer>
-       
+      <footer>
         <div class="footer-statement">
-            <span class="gradient-font">Pixelloop Studio </span>
- 
- 
-            <i class="fa-solid fa-trademark"></i>
+          <span class="gradient-font">Pixelloop Studio </span>
+
+          <i class="fa-solid fa-trademark"></i>
         </div>
         <div class="footer-socials">
-           
-            <div class="footer-social-single">
-                <i class="fa-brands fa-facebook-f"></i>
-            </div>
-            <div class="footer-social-single">
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-            <div class="footer-social-single">
-                <i class="fa-brands fa-youtube"></i>
-            </div>
-            <div class="footer-social-single">
-                <i class="fa-brands fa-github"></i>
-            </div>
-            <div class="footer-social-single">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
+          <div class="footer-social-single">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="footer-social-single">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="footer-social-single">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="footer-social-single">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div class="footer-social-single">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
         </div>
         <div class="footer-links">
-            <div class="footer-item">
-                <a href="./html/impressum.html" > Impressum</a>
-            </div>
-            <div class="footer-item">
-                <a href="./html/dsgvo.html" > DSGVO</a>
-            </div>
-            
-      
+          <div class="footer-item">
+            <a href="./html/impressum.html"> Impressum</a>
+          </div>
+          <div class="footer-item">
+            <a href="./html/dsgvo.html"> DSGVO</a>
+          </div>
         </div>
-
-    </footer>
-</div>
+      </footer>
+    </div>
 
     <script src="./js/vanilla-tilt.min.js"></script>
-   
+
     <script src="./js/common.js"></script>
 
     <script src="./js/main.js"></script>
-</body>
-
+  </body>
 </html>

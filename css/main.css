@@ -20,10 +20,6 @@ section {
   column-gap: 10%;
 }
 
-#header {
-  min-height: 90vh;
-}
-
 .text {
   grid-column: 1;
   background: rgba(255, 255, 255, 0.37);
@@ -46,8 +42,8 @@ section {
 .myVideo {
   object-fit: cover;
   width: 100%;
-  height: 100%;
-  padding: 5%;
+  /* height: 100%;
+  padding: 5%; */
 }
 
 .big_bg {
@@ -105,13 +101,6 @@ section {
 .fancy-button:hover:before {
   right: 0;
 }
-
-.reverse-btn {
-  color: var(--myWhite);
-  border-color: var(--myWhite);
-}
-
-/*  Vorteile    */
 
 .coregrid {
   display: grid;
@@ -224,29 +213,6 @@ textarea {
   outline: none;
   border: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.102);
-}
-
-/* Animate Background*/
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes cube {
-  from {
-    transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    opacity: 1;
-  }
-  to {
-    transform: scale(20) rotate(960deg) translate(-50%, -50%);
-    opacity: 0;
-  }
 }
 
 .coming-soon-box {

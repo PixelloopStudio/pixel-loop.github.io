@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "RobotoSlap";
+  font-style: normal;
+  font-display: optional;
+  src: url("/font/RobotoSlab-VariableFont_wght.ttf");
+}
+
 :root {
   --gradient2: linear-gradient(
     34deg,
@@ -19,7 +26,8 @@
 body {
   background-color: var(--myWhite);
   min-height: 100vh;
-  font-family: "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.5rem;
   color: var(--myBlack);
 }
@@ -33,6 +41,13 @@ a {
   color: var(--myWhite);
 }
 
+.center {
+  text-align: center;
+}
+
+.m-top {
+  margin-top: 40px;
+}
 .wrapper {
   padding-top: 2%;
   max-width: 1500px;
@@ -42,7 +57,8 @@ a {
 h1 {
   color: var(--myBlack);
   font-size: 4rem;
-  font-family: "Roboto Slab", serif;
+  font-family: "RobotoSlap", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
 }
 
